@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Horizon Institute – Student Application Form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ========== HEADER & NAVIGATION ========== -->
+  <header>
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="logo">
+          <i class="fas fa-graduation-cap"></i> Horizon Institute
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="admissions.html" class="active">Admissions</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ========== FORM HERO ========== -->
+    <div class="form-page-hero">
+      <div class="container">
+        <div class="form-page-hero-content">
+          <a href="admissions.html" class="back-link">
+            <i class="fas fa-arrow-left"></i> Back to Admissions
+          </a>
+          <h1>Student Application Form</h1>
+          <p>Fill in the details below to apply for your chosen program.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========== FORM BODY ========== -->
+    <div class="form-page-body">
+      <div class="container">
+        <div class="form-page-card">
+          <h3>Application Details</h3>
+          <p class="form-subtitle">All fields are required. We will review your application and get back to you soon.</p>
+
+          <form id="applicationForm">
+
+            <!-- ===== PERSONAL INFORMATION ===== -->
+            <div class="form-group">
+              <label for="fullName">Full Name</label>
+              <input type="text" id="fullName" placeholder="John Doe" required>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="john@example.com" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" placeholder="+94 77 123 4567" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="program">Select Program</label>
+              <select id="program" required>
+                <option value="">-- Choose a program --</option>
+                <option value="web">Full-Stack Development</option>
+                <option value="data">Data Science & AI</option>
+                <option value="ux">UI/UX Design</option>
+                <option value="marketing">Digital Marketing</option>
+                <option value="cyber">Cybersecurity</option>
+                <option value="business">Business Analytics</option>
+              </select>
+            </div>
+
+            <!-- ===== G.C.E. A/L EXAM ===== -->
+            <div class="form-section-divider">
+              <div class="divider-text">
+                <h4>G.C.E. A/L Examination</h4>
+                <p>Enter your Advanced Level results</p>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="alStream">A/L Stream</label>
+                <select id="alStream" required>
+                  <option value="">-- Select Stream --</option>
+                  <option value="science">Science</option>
+                  <option value="commerce">Commerce</option>
+                  <option value="arts">Arts</option>
+                  <option value="technology">Technology</option>
+                  <option value="ict">ICT</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="alYear">Academic Year</label>
+                <input type="text" id="alYear" placeholder="e.g., 2024" required>
+              </div>
+            </div>
+
+            <span class="mini-label">Subject 1 & Grade</span>
+            <div class="subject-grade-row">
+              <input type="text" id="alSubject1" placeholder="Subject 1 (e.g., Combined Maths)" required>
+              <input type="text" id="alGrade1" placeholder="Grade (A/B/C)" required>
+            </div>
+
+            <span class="mini-label">Subject 2 & Grade</span>
+            <div class="subject-grade-row">
+              <input type="text" id="alSubject2" placeholder="Subject 2 (e.g., Physics)" required>
+              <input type="text" id="alGrade2" placeholder="Grade (A/B/C)" required>
+            </div>
+
+            <span class="mini-label">Subject 3 & Grade</span>
+            <div class="subject-grade-row">
+              <input type="text" id="alSubject3" placeholder="Subject 3 (e.g., Chemistry)" required>
+              <input type="text" id="alGrade3" placeholder="Grade (A/B/C)" required>
+            </div>
+
+            <div class="form-group" style="margin-top:14px;">
+              <label for="alGeneralEnglish">General English Grade</label>
+              <input type="text" id="alGeneralEnglish" placeholder="e.g., B" required>
+            </div>
+
+            <!-- ===== G.C.E. O/L EXAM ===== -->
+            <div class="form-section-divider">
+              <div class="divider-text">
+                <h4>G.C.E. O/L Examination</h4>
+                <p>Enter your Ordinary Level results</p>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="olYear">O/L Year</label>
+              <input type="text" id="olYear" placeholder="e.g., 2021" required>
+            </div>
+
+            <div class="label-grade-row">
+              <div class="field-label">Mathematics</div>
+              <input type="text" id="olMaths" placeholder="Grade (A/B/C)" required>
+            </div>
+
+            <div class="label-grade-row">
+              <div class="field-label">English</div>
+              <input type="text" id="olEnglish" placeholder="Grade (A/B/C)" required>
+            </div>
+
+            <div class="label-grade-row">
+              <div class="field-label">ICT</div>
+              <input type="text" id="olIct" placeholder="Grade (A/B/C)" required>
+            </div>
+
+            <!-- ===== PROGRAM MODE ===== -->
+            <div class="form-section-divider">
+              <div class="divider-text">
+                <h4>Program Mode</h4>
+                <p>Choose your preferred study mode</p>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="programMode">Study Mode</label>
+              <select id="programMode" required>
+                <option value="">-- Select Mode --</option>
+                <option value="full-time">Full Time</option>
+                <option value="part-time">Part Time</option>
+              </select>
+            </div>
+
+            <!-- ===== SUBMIT BUTTON ===== -->
+            <button type="submit" class="btn btn-primary submit-btn">
+              <i class="fas fa-paper-plane"></i> Submit Application
+            </button>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3><i class="fas fa-graduation-cap" style="color:var(--secondary);"></i> Horizon Institute</h3>
+          <p>Empowering future innovators through quality education and practical skills.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="admissions.html">Admissions</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Contact Info</h4>
+          <ul>
+            <li><i class="fas fa-map-marker-alt"></i> 123 Education Lane</li>
+            <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+            <li><i class="fas fa-envelope"></i> info@horizoninstitute.edu</li>
+          </ul>
+          <div class="footer-social" style="margin-top:16px;">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Horizon Institute. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
